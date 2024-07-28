@@ -92,6 +92,7 @@ docker run \
     -it \
     --rm \
     --net=host \
+    --privileged \
     -v ${BUILDISO_TMP_DIR}:/var/lib/manjaro-tools/buildiso/xfce \
     "${IMAGE}" \
     bash

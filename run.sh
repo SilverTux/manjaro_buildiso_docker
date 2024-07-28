@@ -22,7 +22,8 @@ function main() {
         -it \
         --rm \
         --net=host \
-        -v ${BUILDISO_TMP_DIR}:/var/lib/manjaro-tools/buildiso/xfce \
+	--privileged \
+        -v ${BUILDISO_TMP_DIR}:/var/lib/manjaro-tools/buildiso \
         "${IMAGE}" \
         bash
 }
